@@ -9,11 +9,16 @@
     "type": "git",
     "url": "git+https://github.com/khanhnm222/report-engine.git"
   },
-  "author": "",
+  "author": "Nguyen Minh Khanh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/khanhnm222/report-engine/issues"
   },
   "homepage": "https://github.com/khanhnm222/report-engine#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dot": "^1.1.3",
+    "express": "^5.1.0",
+    "puppeteer": "^24.10.0"
+  }
 }
