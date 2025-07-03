@@ -1,0 +1,60 @@
+@media screen {
+  .pdf-page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 1cm auto;
+    padding: 1.5cm;
+    border: 1px solid #ccc;
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: relative;
+  }
+}
+
+/* Print-specific overrides */
+@media print {
+  body {
+    background: white !important;
+    padding: 0 !important;
+  }
+
+  .pdf-page {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    width: auto;
+    min-height: auto;
+    /* padding: 0; */
+    padding: 10mm;
+    box-sizing: border-box;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
+
+body {
+  background: #d1d1d1;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  margin: 0;
+}
+
+.pdf-page {
+  width: 210mm;
+  height: 297mm;
+  margin: auto;
+  background: white;
+  padding: 10mm;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Prevent breaking inside */
+.pdf-page * {
+  page-break-inside: avoid;
+}
