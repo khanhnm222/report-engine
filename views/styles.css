@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  padding: 30px;
+  page-break-after: always;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.meta {
+  text-align: right;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+thead th {
+  background-color: #e6f0f9;
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: left;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  vertical-align: top;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.mark-box {
+  border: 1px solid #000;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+.mark-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 4px 6px;
+  font-weight: bold;
+}
+
+.mark-content {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+}
+
+.mark-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+
+.right {
+  text-align: right;
+}
+
+.blue {
+  color: #0066cc;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media print {
+  .page {
+    page-break-inside: avoid;
+  }
+}
